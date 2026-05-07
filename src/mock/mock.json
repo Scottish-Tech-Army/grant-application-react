@@ -1,0 +1,306 @@
+{
+    "ping": {
+      "status": 200,
+      "entity": null,
+      "metadata": {}
+    },
+    "getDashboard" : {
+        "total": 12,
+        "drafted": 7,
+        "submitted": 5,
+        "recentApplications": [
+          {
+            "applicationId": "1",
+            "name": "ABC Foundation – Youth Program",
+            "funderName": "ABC Foundation",
+            "status": "Drafted",
+            "createdAt": "2026-03-30T16:27:20.671050Z"
+          },
+          {
+            "applicationId": "1",
+            "name": "XYZ Trust – Community Outreach",
+            "funderName": "XYZ Trust",
+            "status": "Drafted",
+            "createdAt": "2026-03-30T16:27:20.671050Z"
+          },
+          {
+            "applicationId": "1",
+            "name": "City Council – Core Costs Support",
+            "funderName": "City Council",
+            "status": "Submitted",
+            "createdAt": "2026-03-30T16:27:20.671050Z"
+          }
+        ]
+    },
+    "getallCommonFields": {
+        "questions": [
+          {
+            "id": "01a1b2c3-d001-4a1b-9c01-111111111001",
+            "question": "What is the organization’s legal name and primary contact information?",
+            "answer": "Bright Futures Community Foundation. Address: 123 Hope Street, Springfield, IL 62701, USA. Phone: +1 (217) 555-0123. Email: info@brightfuturesfoundation.org.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d002-4a1b-9c01-111111111002",
+            "question": "What is the organization’s founding date and brief history?",
+            "answer": "Bright Futures Community Foundation was founded on March 15, 2012 to support education, youth development, and community well-being initiatives in underserved communities.",
+            "currentVersion": 2,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d003-4a1b-9c01-111111111003",
+            "question": "What is the organization’s legal status?",
+            "answer": "The organization is a registered nonprofit with 501(c)(3) tax-exempt status in the United States.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d004-4a1b-9c01-111111111004",
+            "question": "What is the organization’s mailing address?",
+            "answer": "123 Hope Street, Springfield, IL 62701, USA.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d005-4a1b-9c01-111111111005",
+            "question": "What is the organization’s primary phone number?",
+            "answer": "+1 (217) 555-0123",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d006-4a1b-9c01-111111111006",
+            "question": "What is the organization’s fax number?",
+            "answer": "+1 (217) 555-0199",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d007-4a1b-9c01-111111111007",
+            "question": "Does the organization have a donation website or link?",
+            "answer": "Yes. Donations can be made securely at https://www.brightfuturesfoundation.org/donate.",
+            "currentVersion": 3,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d008-4a1b-9c01-111111111008",
+            "question": "What is the organization’s official website?",
+            "answer": "https://www.brightfuturesfoundation.org",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d009-4a1b-9c01-111111111009",
+            "question": "What is the organization’s DUNS number or GuideStar profile?",
+            "answer": "DUNS Number: 12-345-6789. GuideStar profile available at https://www.guidestar.org/profile/12-345-6789.",
+            "currentVersion": 2,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d010-4a1b-9c01-111111111010",
+            "question": "What are the organization’s official social media links?",
+            "answer": "LinkedIn: linkedin.com/company/bright-futures-community-foundation. Facebook: facebook.com/BrightFuturesFoundation. Twitter/X: twitter.com/BrightFuturesCF.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d011-4a1b-9c01-111111111011",
+            "question": "Who is the primary applicant contact?",
+            "answer": "Sarah Mitchell, Grants & Partnerships Manager. Email: sarah.mitchell@brightfuturesfoundation.org. Phone: +1 (217) 555-0145.",
+            "currentVersion": 2,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d012-4a1b-9c01-111111111012",
+            "question": "Who is the main contact person for this application?",
+            "answer": "Sarah Mitchell, Grants & Partnerships Manager.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d013-4a1b-9c01-111111111013",
+            "question": "Who is the organization’s Executive Director?",
+            "answer": "David Reynolds, Executive Director. Email: david.reynolds@brightfuturesfoundation.org.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d014-4a1b-9c01-111111111014",
+            "question": "Who oversees the organization’s financial operations?",
+            "answer": "Linda Chen, Finance Director. Email: linda.chen@brightfuturesfoundation.org.",
+            "currentVersion": 1,
+            "isActive": true
+          },
+          {
+            "id": "01a1b2c3-d015-4a1b-9c01-111111111015",
+            "question": "Please list key organizational contacts and their contact information.",
+            "answer": "Executive Director: David Reynolds (david.reynolds@brightfuturesfoundation.org). Finance Director: Linda Chen (linda.chen@brightfuturesfoundation.org). Program Manager: Michael Alvarez (michael.alvarez@brightfuturesfoundation.org).",
+            "currentVersion": 2,
+            "isActive": true
+          }
+        ],
+      "pageNumber": 1,
+      "pageSize": 10,
+      "totalElements": 42,
+      "totalPages": 5
+    },
+    "editCommonFields": {
+      "id":"0f92d3af-0b59-4111-a7da-770f8f106c9a"
+    },
+    "createCommonFields" : {
+      "id":"0f92d3af-0b59-4111-a7da-770f8f106c9a"
+    },
+    "deleteCommonFields" : {
+      "id":"0f92d3af-0b59-4111-a7da-770f8f106c9a"
+    },
+    "getAllVersions": [
+        {
+          "version": 5,
+          "answer": "Bright Futures Community Foundation. Address: 123 Hope Street, Springfield, IL 62701, USA. Phone: +1 (217) 555-0123. Email: info@brightfuturesfoundation.org. Website: https://www.brightfuturesfoundation.org",
+          "updatedBy": "Sarah Mitchell (sarah.mitchell@brightfuturesfoundation.org)",
+          "updatedDate": "2026-03-31T10:15:42.120Z"
+        },
+        {
+          "version": 4,
+          "answer": "Bright Futures Community Foundation, located at 123 Hope Street, Springfield, IL 62701. Primary contact email: info@brightfuturesfoundation.org. Phone: +1 (217) 555-0123.",
+          "updatedBy": "David Reynolds (david.reynolds@brightfuturesfoundation.org)",
+          "updatedDate": "2026-03-30T16:48:19.884Z"
+        },
+        {
+          "version": 3,
+          "answer": "Bright Futures Community Foundation. Address: 123 Hope Street, Springfield, Illinois 62701. Contact phone number: +1 (217) 555-0123.",
+          "updatedBy": "Linda Chen (linda.chen@brightfuturesfoundation.org)",
+          "updatedDate": "2026-03-29T14:22:03.417Z"
+        },
+        {
+          "version": 2,
+          "answer": "Bright Futures Community Foundation, 123 Hope Street, Springfield, IL. Email contact: info@brightfuturesfoundation.org.",
+          "updatedBy": "Michael Alvarez (michael.alvarez@brightfuturesfoundation.org)",
+          "updatedDate": "2026-03-28T11:05:36.902Z"
+        },
+        {
+          "version": 1,
+          "answer": "Bright Futures Community Foundation, Springfield, Illinois.",
+          "updatedBy": "System Migration (system@brightfuturesfoundation.org)",
+          "updatedDate": "2026-03-27T09:30:12.451Z"
+        }
+    ],
+    "getAllApplications" : {
+      "content": [
+        {
+          "applicationId": "12990e13-b7b6-4d2e-842f-e2c0c23386b3",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Youth Education Support Grant",
+          "funderName": "Bright Futures Trust",
+          "status": "DRAFTED",
+          "createdAt": "2026-03-29T09:15:12.450Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "b399c1a9-fa8a-4407-b9a8-ec5752880af2",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Community Health Initiative 2026",
+          "funderName": "Wellbeing Foundation",
+          "status": "SUBMITTED",
+          "createdAt": "2026-03-30T18:45:20.950541Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "d410053f-8092-42a1-810b-411cb6a5fde4",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Digital Skills for Youth Program",
+          "funderName": "Tech for Good Fund",
+          "status": "DRAFTED",
+          "createdAt": "2026-03-31T04:10:44.121Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "728dfb56-405f-496d-9120-1487308b153c",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Rural Healthcare Outreach",
+          "funderName": "Global Health Partners",
+          "status": "SUBMITTED",
+          "createdAt": "2026-03-31T04:52:34.717311Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "c478f898-a605-47b1-9e65-6f239a9f7563",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Women Empowerment Program",
+          "funderName": "Equity & Inclusion Fund",
+          "status": "SUBMITTED",
+          "createdAt": "2026-03-31T04:53:29.774068Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "8cb23b04-26bd-4655-b22d-ae3920e2d40b",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Environmental Awareness Campaign",
+          "funderName": "Green Earth Foundation",
+          "status": "DRAFTED",
+          "createdAt": "2026-03-31T05:00:33.815203Z",
+          "createdBy": "user123"
+        },
+        {
+          "applicationId": "e7ee4b84-5e11-43b8-b00b-8dd2ec274fe7",
+          "tenant": {
+            "tenantId": "0a055392-097c-4581-9ab7-6ce41af71dc0",
+            "name": "Demo Tenant",
+            "createdAt": "2026-03-30T18:42:19.118083Z",
+            "status": "ACTIVE",
+            "hibernateLazyInitializer": {}
+          },
+          "name": "Arts & Culture Revival Project",
+          "funderName": "Creative Communities Fund",
+          "status": "DELETED",
+          "createdAt": "2026-03-31T05:11:43.357883Z",
+          "createdBy": "user123"
+        }
+      ],
+      "totalElements": 7,
+      "totalPages": 1,
+      "number": 0,
+      "size": 10,
+      "first": true,
+      "last": true,
+      "numberOfElements": 7,
+      "empty": false
+    }
+}
