@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Grant Application Tab Icon</title>
+  <desc id="desc">A document with a checkmark and accent badge.</desc>
+  <defs>
+    <linearGradient id="sheet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7e8" />
+      <stop offset="100%" stop-color="#f1fbf7" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6a21a" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <rect x="6" y="6" width="52" height="52" rx="12" fill="#0f5b4f" />
+  <path d="M20 15h20l8 8v26a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V19a4 4 0 0 1 4-4z" fill="url(#sheet)" />
+  <path d="M40 15v8h8" fill="#d5efe6" />
+
+  <rect x="22" y="30" width="20" height="3" rx="1.5" fill="#8eb5a6" />
+  <rect x="22" y="36" width="14" height="3" rx="1.5" fill="#8eb5a6" />
+
+  <circle cx="46" cy="45" r="9" fill="url(#badge)" />
+  <path d="M42.5 45.3l2.4 2.5 4.8-5" fill="none" stroke="#fffdf5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
