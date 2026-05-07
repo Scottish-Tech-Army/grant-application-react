@@ -1,0 +1,18 @@
+export const COMMON_FIELD_GROUPS = [
+  'Organizational Information',
+  'Budgeting & Finance',
+  'Community Partnerships',
+  'Grant Funding Related',
+  'Program Overview',
+  'Impact & Outcomes',
+  'Staffing & Governance',
+  'Facilities & Assets',
+  'Beneficiaries & Demographics',
+  'Compliance & Risk',
+  'Timeline & Milestones',
+  'Monitoring & Evaluation',
+  'Marketing & Communications',
+  'Sustainability',
+  'Technology & Tools',
+  'Other',
+];
