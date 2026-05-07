@@ -1,0 +1,328 @@
+:root {
+  --bg: #f4f6fb;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --blue: #1f5bd6;
+  --blue2: #0b4cc2;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --radius: 10px;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.appShell {
+  min-height: 100vh;
+}
+
+.topbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  background: linear-gradient(#f7f9ff, #eef2ff);
+  border-bottom: 1px solid var(--border);
+}
+
+.brandTitle {
+  font-weight: 700;
+  color: #1c3f7a;
+}
+
+.topActions {
+  display: flex;
+  gap: 10px;
+}
+
+.linkBtn {
+  border: none;
+  background: transparent;
+  color: #1c3f7a;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 980px;
+  margin: 18px auto 36px;
+  padding: 0 14px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.panelHeader {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.primaryBtn {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.primaryBtn:hover {
+  background: var(--blue2);
+}
+
+.caret {
+  font-size: 12px;
+  opacity: .9;
+}
+
+.tabs {
+  display: flex;
+  gap: 18px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active {
+  color: var(--blue);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 3px;
+  background: var(--blue);
+  border-radius: 3px;
+}
+
+.tableWrap {
+  padding: 0 14px 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.table thead th {
+  background: #f3f6ff;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  color: #334155;
+  font-weight: 800;
+}
+
+.table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.wName {
+  width: 40%;
+}
+
+.wActions {
+  width: 22%;
+}
+
+.thFlex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sort {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.selectAllRow td {
+  background: #fbfcff;
+  color: var(--muted);
+}
+
+.selectAll {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appName {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  border: 1px solid transparent;
+}
+
+.badge.submitted {
+  color: #0f766e;
+  background: #d1fae5;
+  border-color: #a7f3d0;
+}
+
+.badge.draft {
+  color: #92400e;
+  background: #fef3c7;
+  border-color: #fde68a;
+}
+
+.badge.progress {
+  color: #1e40af;
+  background: #dbeafe;
+  border-color: #bfdbfe;
+}
+
+.badge.archived {
+  color: #334155;
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.ghostBtn {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.ghostBtn:hover {
+  background: #f8fafc;
+}
+
+.tableFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2px 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pager {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.pagerBtn {
+  border: 1px solid var(--border);
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.pagerBtn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  background: #fbfcff;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.05);
+  text-align: center;
+}
+
+.cardTitle {
+  font-weight: 800;
+  font-size: 12px;
+  color: #1c3f7a;
+  text-transform: none;
+}
+
+.cardValue {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #1d4ed8;
+}
