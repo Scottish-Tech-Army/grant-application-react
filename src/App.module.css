@@ -1,0 +1,53 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0,
+    var(--color-primary-light) 240px,
+    var(--color-bg) 560px
+  );
+}
+
+.banner {
+  width: 100%;
+  padding: 6px 2px 1px;
+  background-color: var(--color-primary);
+}
+
+.bannerInner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bannerImage {
+  width: auto;
+  max-width: 350px;
+  height: 106px;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 12px 28px rgba(0, 91, 187, 0.24);
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+@media (max-width: 640px) {
+  .banner {
+    padding-top: 4px;
+  }
+
+  .bannerImage {
+    height: 72px;
+    border-radius: 10px;
+  }
+}

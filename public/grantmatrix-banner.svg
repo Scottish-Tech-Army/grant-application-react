@@ -1,0 +1,23 @@
+<svg width="640" height="200" viewBox="0 0 640 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GrantMatrix Banner</title>
+  <desc id="desc">GrantMatrix Smart Grants for Social Good</desc>
+  <rect width="640" height="200" rx="16" fill="#0C57CB"/>
+
+  <g fill="#D9E2F2">
+    <rect x="64" y="32" width="27" height="27" rx="4"/>
+    <rect x="96" y="32" width="27" height="27" rx="4"/>
+    <rect x="128" y="32" width="27" height="27" rx="4"/>
+    <rect x="64" y="64" width="27" height="27" rx="4"/>
+    <rect x="96" y="64" width="27" height="27" rx="4"/>
+    <rect x="128" y="64" width="27" height="27" rx="4"/>
+    <rect x="64" y="96" width="27" height="27" rx="4"/>
+    <rect x="96" y="96" width="27" height="27" rx="4"/>
+    <rect x="128" y="96" width="27" height="27" rx="4"/>
+  </g>
+
+  <path d="M0 119C31 99 62 98 94 109C114 116 130 128 151 129C154 129 157 132 157 136V142C157 145 154 148 151 148H0V119Z" fill="#D9E2F2"/>
+  <path d="M152 136C128 136 112 130 95 123C74 114 56 110 32 110" stroke="#0C57CB" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="176" y="103" fill="#D9E2F2" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="700">GrantMatrix</text>
+  <text x="176" y="160" fill="#D9E2F2" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="500">Smart Grants for Social Good</text>
+</svg>

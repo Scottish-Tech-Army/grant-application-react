@@ -1,0 +1,136 @@
+.container {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+}
+
+.fieldList {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.fieldItem {
+  display: grid;
+  gap: var(--space-xs);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+.fieldLabel {
+  font-weight: 600;
+}
+
+.fieldValue {
+  color: var(--color-text);
+  white-space: pre-wrap;
+}
+
+.exportActions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.historyList {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.historyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+}
+
+.historyActions {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+}
+
+.historyTitle {
+  font-weight: 600;
+}
+
+.historyMeta {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-accent);
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border: none;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.empty {
+  color: var(--color-text-muted);
+}
+
+.error {
+  color: var(--color-accent);
+}
+
+.back {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview {
+  width: 100%;
+  border-radius: var(--radius-md);
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  background: var(--color-surface);
+}

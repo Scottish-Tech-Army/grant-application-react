@@ -1,0 +1,37 @@
+.panel {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.preview {
+  width: 100%;
+  border-radius: var(--radius-md);
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  background: var(--color-surface);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.secondary {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}

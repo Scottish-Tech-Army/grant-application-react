@@ -1,0 +1,42 @@
+{
+  "name": "grant-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "node22:npm-version": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-npm.ps1 --version",
+    "node22:install": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-npm.ps1 install",
+    "node22:ci": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-npm.ps1 ci --no-audit --no-fund",
+    "node22:dev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-run.ps1 dev",
+    "node22:build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-run.ps1 build",
+    "node22:lint": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-run.ps1 lint",
+    "node22:preview": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/node22-run.ps1 preview",
+    "server:install": "npm --prefix server --userconfig .npmrc install",
+    "server:dev": "npm --prefix server --userconfig .npmrc run dev",
+    "server:start": "npm --prefix server --userconfig .npmrc run start",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.14",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1"
+  }
+}

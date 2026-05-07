@@ -1,0 +1,516 @@
+{
+  "sharedFields": [
+    [
+      "sf_7be95995539a",
+      {
+        "id": "sf_7be95995539a",
+        "key": "org.name",
+        "label": "Org Name",
+        "description": "",
+        "type": "text",
+        "required": false,
+        "tags": [],
+        "options": [],
+        "createdBy": "system",
+        "createdAt": "2026-03-30T09:19:52.827Z",
+        "updatedAt": "2026-03-30T09:19:52.827Z",
+        "archived": false,
+        "revision": 1
+      }
+    ],
+    [
+      "sf_847bfb3aeabc",
+      {
+        "id": "sf_847bfb3aeabc",
+        "key": "ui.sf_847bfb3aeabc",
+        "label": "Organisation Name",
+        "description": "",
+        "type": "text",
+        "required": false,
+        "tags": [
+          "Organisation"
+        ],
+        "options": [],
+        "createdBy": "system",
+        "createdAt": "2026-03-30T09:29:34.575Z",
+        "updatedAt": "2026-03-31T05:27:21.779Z",
+        "archived": true,
+        "revision": 2
+      }
+    ],
+    [
+      "sf_4ee947e8f82c",
+      {
+        "id": "sf_4ee947e8f82c",
+        "key": "ui.sf_4ee947e8f82c",
+        "label": "New label",
+        "description": "",
+        "type": "long_text",
+        "required": false,
+        "tags": [
+          "Organizational Information"
+        ],
+        "options": [],
+        "createdBy": "system",
+        "createdAt": "2026-03-31T05:27:37.960Z",
+        "updatedAt": "2026-03-31T05:27:54.962Z",
+        "archived": false,
+        "revision": 2
+      }
+    ],
+    [
+      "sf_9625ac258cab",
+      {
+        "id": "sf_9625ac258cab",
+        "key": "ui.sf_9625ac258cab",
+        "label": "sdsdsds",
+        "description": "",
+        "type": "long_text",
+        "required": false,
+        "tags": [
+          "Budgeting & Finance"
+        ],
+        "options": [],
+        "createdBy": "system",
+        "createdAt": "2026-03-31T05:28:30.567Z",
+        "updatedAt": "2026-03-31T05:28:36.309Z",
+        "archived": false,
+        "revision": 2
+      }
+    ]
+  ],
+  "sharedFieldVersions": [
+    [
+      "sf_847bfb3aeabc",
+      [
+        {
+          "id": "sfv_f379f3360f0d",
+          "sharedFieldId": "sf_847bfb3aeabc",
+          "version": 1,
+          "value": "Acme CIC",
+          "changeNote": "",
+          "effectiveFrom": null,
+          "createdBy": "system",
+          "createdAt": "2026-03-30T09:29:34.575Z"
+        }
+      ]
+    ],
+    [
+      "sf_7be95995539a",
+      [
+        {
+          "id": "sfv_4fb94138b7e7",
+          "sharedFieldId": "sf_7be95995539a",
+          "version": 1,
+          "value": "",
+          "changeNote": "Auto-created default version",
+          "effectiveFrom": null,
+          "createdBy": "system",
+          "createdAt": "2026-03-30T11:21:46.214Z"
+        }
+      ]
+    ],
+    [
+      "sf_4ee947e8f82c",
+      [
+        {
+          "id": "sfv_14326dab50b1",
+          "sharedFieldId": "sf_4ee947e8f82c",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "effectiveFrom": null,
+          "createdBy": "system",
+          "createdAt": "2026-03-31T05:27:37.960Z"
+        }
+      ]
+    ],
+    [
+      "sf_9625ac258cab",
+      [
+        {
+          "id": "sfv_76692b044250",
+          "sharedFieldId": "sf_9625ac258cab",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "effectiveFrom": null,
+          "createdBy": "system",
+          "createdAt": "2026-03-31T05:28:30.567Z"
+        }
+      ]
+    ]
+  ],
+  "applications": [
+    [
+      "app_51890bd2595c",
+      {
+        "id": "app_51890bd2595c",
+        "name": "UI App 1",
+        "fundingBody": "",
+        "deadline": null,
+        "status": "draft",
+        "createdBy": "system",
+        "createdAt": "2026-03-30T09:29:34.586Z",
+        "updatedAt": "2026-03-31T06:29:29.974Z",
+        "submittedAt": null,
+        "archivedAt": null,
+        "revision": 2
+      }
+    ],
+    [
+      "app_7bc6c890a4a9",
+      {
+        "id": "app_7bc6c890a4a9",
+        "name": "App2",
+        "fundingBody": "",
+        "deadline": null,
+        "status": "archived",
+        "createdBy": "system",
+        "createdAt": "2026-03-30T11:21:46.211Z",
+        "updatedAt": "2026-03-30T11:22:23.574Z",
+        "submittedAt": null,
+        "archivedAt": "2026-03-30T11:22:23.574Z",
+        "revision": 2
+      }
+    ],
+    [
+      "app_097dc24cc14f",
+      {
+        "id": "app_097dc24cc14f",
+        "name": "App 2",
+        "fundingBody": "",
+        "deadline": null,
+        "status": "draft",
+        "createdBy": "system",
+        "createdAt": "2026-03-30T11:23:01.050Z",
+        "updatedAt": "2026-03-31T06:31:43.140Z",
+        "submittedAt": null,
+        "archivedAt": null,
+        "revision": 2
+      }
+    ],
+    [
+      "app_f01acbf4e8cf",
+      {
+        "id": "app_f01acbf4e8cf",
+        "name": "App3",
+        "fundingBody": "",
+        "deadline": null,
+        "status": "draft",
+        "createdBy": "system",
+        "createdAt": "2026-03-30T12:25:16.176Z",
+        "updatedAt": "2026-03-31T05:39:10.788Z",
+        "submittedAt": null,
+        "archivedAt": null,
+        "revision": 2
+      }
+    ]
+  ],
+  "applicationSharedSelections": [
+    [
+      "app_51890bd2595c",
+      [
+        [
+          "sf_847bfb3aeabc",
+          {
+            "id": "asfs_ea69cdd93a38",
+            "applicationId": "app_51890bd2595c",
+            "sharedFieldId": "sf_847bfb3aeabc",
+            "selectedVersionId": "sfv_f379f3360f0d",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T06:29:29.974Z",
+            "selectedBy": "system"
+          }
+        ]
+      ]
+    ],
+    [
+      "app_7bc6c890a4a9",
+      [
+        [
+          "sf_847bfb3aeabc",
+          {
+            "id": "asfs_bbc9b5bed7bc",
+            "applicationId": "app_7bc6c890a4a9",
+            "sharedFieldId": "sf_847bfb3aeabc",
+            "selectedVersionId": "sfv_f379f3360f0d",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-30T11:21:46.214Z",
+            "selectedBy": "system"
+          }
+        ],
+        [
+          "sf_7be95995539a",
+          {
+            "id": "asfs_de767288b6f1",
+            "applicationId": "app_7bc6c890a4a9",
+            "sharedFieldId": "sf_7be95995539a",
+            "selectedVersionId": "sfv_4fb94138b7e7",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-30T11:21:46.214Z",
+            "selectedBy": "system"
+          }
+        ]
+      ]
+    ],
+    [
+      "app_097dc24cc14f",
+      [
+        [
+          "sf_847bfb3aeabc",
+          {
+            "id": "asfs_490c4a9d90cb",
+            "applicationId": "app_097dc24cc14f",
+            "sharedFieldId": "sf_847bfb3aeabc",
+            "selectedVersionId": "sfv_f379f3360f0d",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T06:31:43.140Z",
+            "selectedBy": "system"
+          }
+        ],
+        [
+          "sf_7be95995539a",
+          {
+            "id": "asfs_60511c39c3f2",
+            "applicationId": "app_097dc24cc14f",
+            "sharedFieldId": "sf_7be95995539a",
+            "selectedVersionId": "sfv_4fb94138b7e7",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T06:31:43.140Z",
+            "selectedBy": "system"
+          }
+        ],
+        [
+          "sf_9625ac258cab",
+          {
+            "id": "asfs_7144fd0b972c",
+            "applicationId": "app_097dc24cc14f",
+            "sharedFieldId": "sf_9625ac258cab",
+            "selectedVersionId": "sfv_76692b044250",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T06:31:43.140Z",
+            "selectedBy": "system"
+          }
+        ],
+        [
+          "sf_4ee947e8f82c",
+          {
+            "id": "asfs_262c61bab7a9",
+            "applicationId": "app_097dc24cc14f",
+            "sharedFieldId": "sf_4ee947e8f82c",
+            "selectedVersionId": "sfv_14326dab50b1",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T06:31:43.140Z",
+            "selectedBy": "system"
+          }
+        ]
+      ]
+    ],
+    [
+      "app_f01acbf4e8cf",
+      [
+        [
+          "sf_847bfb3aeabc",
+          {
+            "id": "asfs_03e62812494a",
+            "applicationId": "app_f01acbf4e8cf",
+            "sharedFieldId": "sf_847bfb3aeabc",
+            "selectedVersionId": "sfv_f379f3360f0d",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T05:39:10.788Z",
+            "selectedBy": "system"
+          }
+        ],
+        [
+          "sf_7be95995539a",
+          {
+            "id": "asfs_ed5cc3f240db",
+            "applicationId": "app_f01acbf4e8cf",
+            "sharedFieldId": "sf_7be95995539a",
+            "selectedVersionId": "sfv_4fb94138b7e7",
+            "selectedVersion": 1,
+            "selectedAt": "2026-03-31T05:39:10.788Z",
+            "selectedBy": "system"
+          }
+        ]
+      ]
+    ]
+  ],
+  "customFieldsByApplication": [
+    [
+      "app_51890bd2595c",
+      [
+        [
+          "acf_67fe7ddb00b3",
+          {
+            "id": "acf_67fe7ddb00b3",
+            "applicationId": "app_51890bd2595c",
+            "key": "ui.acf_67fe7ddb00b3",
+            "label": "Project Summary",
+            "type": "long_text",
+            "required": false,
+            "options": [],
+            "archived": false,
+            "createdAt": "2026-03-31T06:29:29.974Z",
+            "updatedAt": "2026-03-31T06:29:29.974Z",
+            "revision": 1
+          }
+        ]
+      ]
+    ],
+    [
+      "app_7bc6c890a4a9",
+      [
+        [
+          "acf_3759f73970b0",
+          {
+            "id": "acf_3759f73970b0",
+            "applicationId": "app_7bc6c890a4a9",
+            "key": "ui.acf_3759f73970b0",
+            "label": "Amount",
+            "type": "number",
+            "required": false,
+            "options": [],
+            "archived": false,
+            "createdAt": "2026-03-30T11:21:46.211Z",
+            "updatedAt": "2026-03-30T11:21:46.211Z",
+            "revision": 1
+          }
+        ]
+      ]
+    ],
+    [
+      "app_097dc24cc14f",
+      [
+        [
+          "acf_4f038a426ab3",
+          {
+            "id": "acf_4f038a426ab3",
+            "applicationId": "app_097dc24cc14f",
+            "key": "ui.acf_4f038a426ab3",
+            "label": "Total Amount",
+            "type": "number",
+            "required": false,
+            "options": [],
+            "archived": false,
+            "createdAt": "2026-03-31T06:31:43.140Z",
+            "updatedAt": "2026-03-31T06:31:43.140Z",
+            "revision": 1
+          }
+        ],
+        [
+          "acf_ef5575fd737e",
+          {
+            "id": "acf_ef5575fd737e",
+            "applicationId": "app_097dc24cc14f",
+            "key": "ui.acf_ef5575fd737e",
+            "label": "Org Size",
+            "type": "number",
+            "required": false,
+            "options": [],
+            "archived": false,
+            "createdAt": "2026-03-31T06:31:43.140Z",
+            "updatedAt": "2026-03-31T06:31:43.140Z",
+            "revision": 1
+          }
+        ]
+      ]
+    ],
+    [
+      "app_f01acbf4e8cf",
+      [
+        [
+          "1774935541412",
+          {
+            "id": "1774935541412",
+            "applicationId": "app_f01acbf4e8cf",
+            "key": "ui.1774935541412",
+            "label": "New Field 1",
+            "type": "text",
+            "required": false,
+            "options": [],
+            "archived": false,
+            "createdAt": "2026-03-31T05:39:10.788Z",
+            "updatedAt": "2026-03-31T05:39:10.788Z",
+            "revision": 1
+          }
+        ]
+      ]
+    ]
+  ],
+  "customFieldVersions": [
+    [
+      "acf_67fe7ddb00b3",
+      [
+        {
+          "id": "acfv_aedf7995f9fd",
+          "customFieldId": "acf_67fe7ddb00b3",
+          "version": 1,
+          "value": "Pilot project",
+          "changeNote": "",
+          "createdBy": "system",
+          "createdAt": "2026-03-31T06:29:29.974Z"
+        }
+      ]
+    ],
+    [
+      "acf_3759f73970b0",
+      [
+        {
+          "id": "acfv_0bc29ba4d076",
+          "customFieldId": "acf_3759f73970b0",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "createdBy": "system",
+          "createdAt": "2026-03-30T11:21:46.211Z"
+        }
+      ]
+    ],
+    [
+      "acf_4f038a426ab3",
+      [
+        {
+          "id": "acfv_805103f70d9a",
+          "customFieldId": "acf_4f038a426ab3",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "createdBy": "system",
+          "createdAt": "2026-03-31T06:31:43.140Z"
+        }
+      ]
+    ],
+    [
+      "acf_ef5575fd737e",
+      [
+        {
+          "id": "acfv_13bea3d31ecf",
+          "customFieldId": "acf_ef5575fd737e",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "createdBy": "system",
+          "createdAt": "2026-03-31T06:31:43.140Z"
+        }
+      ]
+    ],
+    [
+      "1774935541412",
+      [
+        {
+          "id": "acfv_1606fc7d98e9",
+          "customFieldId": "1774935541412",
+          "version": 1,
+          "value": "",
+          "changeNote": "",
+          "createdBy": "system",
+          "createdAt": "2026-03-31T05:39:10.788Z"
+        }
+      ]
+    ]
+  ],
+  "exportJobsByApplication": [],
+  "submissionSnapshots": []
+}
