@@ -1,0 +1,19 @@
+:root { font-family: system-ui, Arial, sans-serif; }
+a { color: #0b63ce; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.nav { display: flex; gap: 12px; margin: 10px 0 18px; flex-wrap: wrap; }
+.card { border: 1px solid #ddd; border-radius: 10px; padding: 12px; margin: 10px 0; background: #fff; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+input, select, textarea, button { font: inherit; }
+input, select, textarea { padding: 8px; border: 1px solid #ccc; border-radius: 8px; }
+textarea { width: 100%; min-height: 110px; }
+button { padding: 8px 12px; border: 1px solid #bbb; border-radius: 8px; background: #f7f7f7; cursor: pointer; }
+button.primary { background: #0b63ce; color: white; border-color: #0b63ce; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+.badge { font-size: 12px; padding: 3px 8px; border-radius: 999px; background: #eee; }
+hr { border: 0; border-top: 1px solid #eee; margin: 16px 0; }
+.small { color: #666; font-size: 12px; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+.toast { position: fixed; right: 16px; bottom: 16px; background: #111; color: #fff; padding: 10px 12px; border-radius: 10px; opacity: 0.95; }

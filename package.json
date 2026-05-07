@@ -1,0 +1,12 @@
+{
+  "name": "grantkit",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "start cmd /k \"npm -w apps/web run dev\"",
+    "build": "npm -w apps/web run build"
+  }
+}
