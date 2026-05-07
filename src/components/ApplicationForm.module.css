@@ -1,0 +1,583 @@
+/* ============================================================
+   ApplicationForm.module.css
+   All styles scoped to the ApplicationForm component.
+   Uses design tokens from index.css (var(--primary), etc.)
+   ============================================================ */
+
+.formCard {
+  padding: 2.5rem;
+  animation: slideInUp 0.4s ease-out;
+}
+
+.errorBanner {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.15));
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+  box-shadow: 0 4px 12px -1px rgba(239, 68, 68, 0.3);
+  border-left: 4px solid #f87171;
+}
+
+.errorTitle {
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.errorList {
+  margin: 0;
+  padding-left: 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.sectionHeader {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.sectionHeaderSpaced {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.labelStrong {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.labelMedium {
+  font-weight: 600;
+}
+
+.reqStar {
+  color: #f87171;
+  margin-left: 3px;
+}
+
+.gridGap {
+  gap: 2rem;
+}
+
+.inputError {
+  border: 1.5px solid #f87171 !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+/* ── Section 2: Integrated Charity Data ── */
+
+.templateFieldsBox {
+  background: rgba(34, 211, 238, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.templateFieldsBoxError {
+  background: rgba(34, 211, 238, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1.5px solid rgba(239, 68, 68, 0.5);
+}
+
+.templateFieldsLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.templateFieldsLabelError {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fca5a5;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.fieldsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.3s ease-out;
+}
+
+.fieldRow:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  transform: translateY(-2px);
+}
+
+.fieldRowSelected {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  animation: scaleIn 0.3s ease-out;
+}
+
+.fieldRowReadOnly {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  cursor: default;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fieldRowSelectedReadOnly {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  cursor: default;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 2px solid var(--primary);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.checkboxChecked {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.miniLabel {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.fieldName {
+  flex: 1.5;
+  overflow: hidden;
+}
+
+.fieldNameValue {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.fieldContent {
+  flex: 3;
+}
+
+.fieldContentValue {
+  color: var(--text-main);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.internalNotes {
+  flex: 1.5;
+  background: rgba(34, 211, 238, 0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-left: 4px solid rgba(34, 211, 238, 0.4);
+}
+
+.internalNotesValue {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* ── Section 3: Application Specific Data ── */
+
+.specificFieldsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  background: rgba(34, 211, 238, 0.03);
+}
+
+.emptyStateText {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.specificFieldRow {
+  background: rgba(34, 211, 238, 0.05);
+  padding: 1.25rem;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.specificFieldLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.textareaBase {
+  flex: 1;
+  min-height: 64px;
+  background: #fff;
+  font-size: 0.85rem;
+}
+
+.textareaComment {
+  flex: 1;
+  min-height: 64px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.fieldCol {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+}
+
+.valueCol {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentCol {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.actionCol {
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  padding-top: 1.4rem;
+}
+
+.btnAdd {
+  background: linear-gradient(135deg, #e6f1ef, #d1f4ea);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  height: 30px;
+  width: 44px;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 106, 77, 0.1);
+}
+
+.btnAdd:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 106, 77, 0.2);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-light));
+}
+
+.btnAdd:active {
+  transform: scale(0.95);
+}
+
+.btnRemove {
+  background: linear-gradient(135deg, #fef2f2, #fee2e2);
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  height: 30px;
+  width: 44px;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.1);
+}
+
+.btnRemove:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+  background: linear-gradient(135deg, #fecaca, #fecaca);
+}
+
+.btnRemove:active {
+  transform: scale(0.95);
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+  /* =========================================================
+     RESPONSIVE STYLES
+  ========================================================= */
+
+  @media (max-width: 640px) {
+    .formCard {
+      padding: 1rem;
+    }
+
+    .errorBanner {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .errorTitle {
+      font-size: 0.9rem;
+      gap: 0.5rem;
+    }
+
+    .errorList {
+      padding-left: 1.25rem;
+      font-size: 0.8rem;
+    }
+
+    .sectionHeader,
+    .sectionHeaderSpaced {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .labelStrong {
+      font-size: 0.85rem;
+    }
+
+    .gridGap {
+      gap: 1rem;
+    }
+
+    .templateFieldsBox {
+      padding: 1rem;
+    }
+
+    .fieldRow,
+    .fieldRowSelected,
+    .fieldRowReadOnly,
+    .fieldRowSelectedReadOnly {
+      gap: 12px;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+
+    .fieldName {
+      flex: 1 100%;
+      min-width: 0;
+    }
+
+    .fieldContent {
+      flex: 1 100%;
+    }
+
+    .internalNotes {
+      flex: 1 100%;
+    }
+
+    .specificFieldRow {
+      padding: 1rem;
+    }
+
+    .fieldCol {
+      flex: 1;
+    }
+
+    .valueCol {
+      flex: 1;
+    }
+
+    .commentCol {
+      flex: 1;
+    }
+
+    .actionCol {
+      width: 40px;
+      flex-direction: row;
+      gap: 0;
+      padding-top: 0;
+      padding-bottom: 1rem;
+      justify-content: center;
+    }
+
+    .btnAdd,
+    .btnRemove {
+      height: 28px;
+      width: 40px;
+      font-size: 1rem;
+    }
+
+    .textareaBase,
+    .textareaComment {
+      min-height: 50px;
+      font-size: 0.8rem;
+    }
+
+    .miniLabel {
+      font-size: 0.6rem;
+    }
+
+    .fieldNameValue {
+      font-size: 0.85rem;
+    }
+
+    .fieldContentValue {
+      font-size: 0.85rem;
+    }
+
+    .internalNotesValue {
+      font-size: 0.7rem;
+    }
+
+    .emptyState {
+      padding: 2rem 1rem;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .formCard {
+      padding: 1.5rem;
+    }
+
+    .sectionHeader,
+    .sectionHeaderSpaced {
+      font-size: 1.2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .fieldRow,
+    .fieldRowSelected,
+    .fieldRowReadOnly,
+    .fieldRowSelectedReadOnly {
+      gap: 15px;
+      padding: 14px;
+    }
+
+    .fieldName {
+      flex: 1.2;
+    }
+
+    .fieldContent {
+      flex: 2;
+    }
+
+    .gridGap {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .formCard {
+      padding: 2rem;
+    }
+
+    .gridGap {
+      gap: 1.75rem;
+    }
+
+    .fieldName {
+      flex: 1.25;
+    }
+
+    .fieldContent {
+      flex: 2.5;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .formCard {
+      padding: 2.5rem;
+    }
+  }

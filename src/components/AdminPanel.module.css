@@ -1,0 +1,584 @@
+/* ============================================================
+   AdminPanel.module.css
+   Scoped styles for the Charity Data Templates admin view.
+   ============================================================ */
+
+.root {
+  padding-bottom: 2rem;
+}
+
+/* ── Page titles ── */
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.pageSubtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+/* ── Voice assistant badge (shared pattern) ── */
+.voiceAssistantBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.voiceAssistantLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.voiceAssistantCheckbox {
+  width: 18px;
+  height: 18px;
+}
+
+/* ── Template list table ── */
+.tableContainer {
+  border: 1px solid var(--border-color);
+}
+
+.theadRow {
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.thSortable {
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.thSortIcon {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.th {
+  color: var(--text-muted);
+}
+
+.templateIconWrap {
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #10b981;
+}
+
+.tdDescription {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.tdDate {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btnViewEdit {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--primary);
+  border-color: var(--border-color);
+}
+
+.tdEmpty {
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+/* ── Edit view ── */
+.editCard {
+  padding: 2rem;
+}
+
+.editMetaRow {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.editMetaField {
+  flex: 0 0 400px;
+}
+
+.editMetaLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.directoryActionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 380px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border-radius: 99px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: #fff;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(0, 106, 77, 0.08);
+}
+
+.emptyStateContainer {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyStateIcon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.sectionHint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Schema field rows */
+.schemaFieldsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.schemaEmptyState {
+  text-align: center;
+  padding: 3rem;
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.schemaEmptyText {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.schemaFieldRow {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.textareaKey {
+  flex: 1.2;
+  padding: 0.5rem 0.75rem;
+  min-height: 64px;
+  resize: vertical;
+  background: #fff;
+  font-size: 0.85rem;
+}
+
+.textareaValue {
+  flex: 2;
+  padding: 0.5rem 0.75rem;
+  min-height: 64px;
+  resize: vertical;
+  background: #fff;
+  font-size: 0.85rem;
+}
+
+.textareaComment {
+  flex: 0.8;
+  padding: 0.5rem 0.75rem;
+  min-height: 64px;
+  resize: vertical;
+  background: #f8fafc;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.schemaActionCol {
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.btnAdd {
+  background: #e6f1ef;
+  color: var(--primary);
+  border: 1px solid #cce1dc;
+  height: 30px;
+  width: 44px;
+  padding: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnRemove {
+  background: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  height: 30px;
+  width: 44px;
+  padding: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Edit view action bar */
+.editActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 2.5rem;
+}
+
+.btnDiscard {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #ef4444;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btnSaveTemplate {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 106, 77, 0.1);
+}
+
+/* ── Validation Feedback ── */
+.errorBanner {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #b91c1c;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.errorTitle {
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.errorList {
+  margin: 0;
+  padding-left: 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+  /* =========================================================
+     RESPONSIVE STYLES
+  ========================================================= */
+
+  @media (max-width: 640px) {
+    .root {
+      padding-bottom: 1rem;
+    }
+
+    .pageTitle {
+      font-size: 1.3rem;
+    }
+
+    .pageSubtitle {
+      font-size: 0.65rem;
+    }
+
+    .editCard {
+      padding: 1rem;
+    }
+
+    .editMetaRow {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .editMetaField {
+      flex: 0 0 auto;
+    }
+
+    .directoryActionRow {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .searchWrapper {
+      width: 100%;
+    }
+
+    .searchInput {
+      padding: 0.6rem 1rem 0.6rem 2.5rem;
+      font-size: 0.85rem;
+    }
+
+    .tableContainer {
+      border: none;
+      border-radius: 4px;
+    }
+
+    table {
+      font-size: 0.75rem;
+    }
+
+    th, td {
+      padding: 0.6rem 0.5rem;
+    }
+
+    .tdDescription {
+      font-size: 0.75rem;
+    }
+
+    .tdDate {
+      font-size: 0.75rem;
+    }
+
+    .btnViewEdit {
+      padding: 0.3rem 0.5rem;
+      font-size: 0.7rem;
+    }
+
+    .sectionTitle {
+      font-size: 0.95rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .sectionHint {
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .schemaFieldRow {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .textareaKey,
+    .textareaValue,
+    .textareaComment {
+      flex: 1;
+      min-height: 50px;
+      font-size: 0.8rem;
+    }
+
+    .schemaActionCol {
+      width: 40px;
+      flex-direction: row;
+      gap: 0;
+      padding-bottom: 0.5rem;
+    }
+
+    .btnAdd,
+    .btnRemove {
+      height: 28px;
+      width: 40px;
+      font-size: 1rem;
+    }
+
+    .emptyStateContainer {
+      padding: 2rem 1rem;
+    }
+
+    .emptyStateIcon {
+      font-size: 2rem;
+    }
+
+    .editActions {
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btnDiscard,
+    .btnSaveTemplate {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    .errorBanner {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .errorTitle {
+      font-size: 0.9rem;
+      gap: 0.5rem;
+    }
+
+    .errorList {
+      padding-left: 1.25rem;
+      font-size: 0.8rem;
+    }
+
+    .voiceAssistantBadge {
+      padding: 0.4rem 0.75rem;
+      gap: 0.35rem;
+    }
+
+    .voiceAssistantLabel {
+      font-size: 0.65rem;
+    }
+
+    .voiceAssistantCheckbox {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px) {
+    .pageTitle {
+      font-size: 1.5rem;
+    }
+
+    .editCard {
+      padding: 1.5rem;
+    }
+
+    .editMetaRow {
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .directoryActionRow {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .searchWrapper {
+      width: 100%;
+    }
+
+    .editActions {
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .btnDiscard,
+    .btnSaveTemplate {
+      padding: 0.5rem 1.25rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .pageTitle {
+      font-size: 1.6rem;
+    }
+
+    .editCard {
+      padding: 1.75rem;
+    }
+
+    .editMetaRow {
+      gap: 1.5rem;
+    }
+
+    .searchWrapper {
+      width: 300px;
+    }
+
+    .editActions {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .searchWrapper {
+      width: 380px;
+    }
+  }
